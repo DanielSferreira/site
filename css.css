@@ -1,0 +1,13 @@
+#sub-caixa1
+{
+    background-color: aquamarine;
+    
+}
+.sub-caixa
+{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 15px;
+}
