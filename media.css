@@ -1,5 +1,32 @@
-
 @media only screen and (max-width: 1024px) {
-    .modal_descrition {    display: flex; flex-direction: column;  }
+    .modal_descrition {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
+@media only screen and (min-width: 1025px) {
+    .modal_descrition_left {
+        margin-right: 1vh;
+        padding-right: 1vh;
+    }
+}
+
+.modal_content::-webkit-scrollbar {
+    width: 11px;
+}
+
+.modal_content {
+    scrollbar-width: thin;
+    scrollbar-color: #CFD8DC #90A4AE;
+}
+
+.modal_content::-webkit-scrollbar-track {
+    background: #CFD8DC;
+}
+
+.modal_content::-webkit-scrollbar-thumb {
+    background-color: #90A4AE;
+    border-radius: 6px;
+    border: 3px solid #CFD8DC;
 }

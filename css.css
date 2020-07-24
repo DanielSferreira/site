@@ -1,32 +1,24 @@
-#sub-caixa1
-{
-    background-color: aquamarine;
-    
-}
-.sub-caixa
-{
-    width: 250px;
-    height: 250px;
-    cursor: pointer;
-    margin: 10px;
-    border-radius: 15px;
-}
-
 body {
-    font-size: larger;font-family: 'Domine', serif;
+    font-size: larger;
+    font-family: 'Domine', serif;
     font-family: 'Open Sans', sans-serif;
 }
-#modal-container {
+
+.modal_container {
     position: absolute;
-    background-color: rgba(190, 190, 190, 0.7);
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(190, 190, 190, 0.7);   
+}
+#modal-container{
+    position: absolute;
 }
 
 .show-modal {
     animation-name: Container_Animate;
     transition: all 0.3s;
     opacity: 1;
-    top: 0;
+    top: 0px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -45,9 +37,10 @@ body {
 .modal_content {
     background: white;
     margin: 5vw;
+    height: 650px;
+    max-height: 90%;
     padding: 0 2.5vh 2.5vw;
-    height: 80vh;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .header_content_modal {
@@ -64,17 +57,35 @@ body {
     cursor: pointer;
 }
 
-.header_content_modal_title {    font-weight: 600;  }
-
-.modal_descrition {    display: flex;   }
-
-
-.modal_descrition_left
-{
-    flex:1;
-    margin-right: 1vh;
-    padding-right: 1vh;
-    border-right: gray 1px solid;
+.header_content_modal_title {
+    font-weight: 600;
 }
 
-.modal_descrition_right{    flex:2; }
+.modal_descrition {
+    display: flex;
+}
+
+.modal_descrition_left img {
+    width: 100%;
+}
+
+.modal_descrition_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+}
+
+.modal_descrition_right {
+    flex: 2;
+}
+
+.button-star {
+    margin-top: 15px;
+    background-color: rgb(179, 52, 52);
+    border:none;
+    padding: 9px;
+    font-size:1.3rem;
+    color:white;
+}

@@ -6,10 +6,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/336fa9bb34.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/336fa9bb34.js" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="media.css">
@@ -17,21 +17,20 @@
 </head>
 
 <body>
-    <p>Hover <i class='fas fa-close' style='font-size:24px'>a</i></p>
+    <h3>Exemplo de curso</h3>
 
-    <div class="container" >
+    <div class="container">
         <div class="caixa" id="caixa1">
-            <div 
-            class="sub-caixa animate__animated animate__slideInDown"
-            id="sub-caixa1">
-
+            <div class="sub-caixa" id="sub-caixa1">
             </div>
         </div>
     </div>
-
-    <div onclick="teste()" class="modal_container hide-modal" id="modal-container">
+    
+    <div id="modal-container">
+        <div onclick="teste()" class="modal_container" id="modal-background"></div>
+        <!-- <div id="modal-cotent" class="modal_content animate__animated animate__fadeInDown"></div> -->
     </div>
-       
+
     <script src="script.js"></script>
 
 </body>
