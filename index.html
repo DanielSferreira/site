@@ -18,20 +18,28 @@
 
 <body>
     <h3>Exemplo de curso</h3>
-
-    <div class="container">
-        <div class="caixa" id="caixa1">
-            <div class="sub-caixa" id="sub-caixa1">
-            </div>
-        </div>
+    <p>
+        Clique no botão abaixo para ver o modelo de uma tela com as infomações de um curso. <br> Nesse caso as
+        infomações de um curso de Farmácia
+    </p>
+    <div class='caixa'>
+        <p>Curso de Administração: </p>
+        <button id="btn-youtuber" class="button-star">
+            <span class="fas fa-star"> </span> Saiba mais
+        </button>
     </div>
-    
+    <div class='caixa'>
+        <p>Curso de Batata: </p>
+        <button id="btn-photoshop" class="button-star">
+            <span class="fas fa-star"> </span> Saiba mais
+        </button>
+    </div>
+
     <div id="modal-container">
-        <div onclick="teste()" class="modal_container" id="modal-background"></div>
-        <!-- <div id="modal-cotent" class="modal_content animate__animated animate__fadeInDown"></div> -->
+        <div onclick="fechar_modal()" class="modal_container" id="modal-background"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scriptCourses.js"></script>
 
 </body>
 
